@@ -10,7 +10,7 @@ RUN apt-get update \
 WORKDIR /opt/calibre
 
 # Install calibre
-ENV CALIBRE_VERSION=3.14.0
+ENV CALIBRE_VERSION=3.17.0
 RUN wget -O - --quiet https://github.com/kovidgoyal/calibre/releases/download/v$CALIBRE_VERSION/calibre-$CALIBRE_VERSION-x86_64.txz \
 	| tar xJvf -
 
